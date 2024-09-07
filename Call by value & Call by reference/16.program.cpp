@@ -42,11 +42,11 @@ int main() {
 
     // cout << "The sum of " << num1 << " and " << num2 << " is " << sum(&num1, &num2);  // arguments are passed via call by reference method(using pointers)
     // cout << "\nAfter calling and altering the value of num1 via call by reference method\n";
-    // cout << "Original value of num1 is " << num1 << endl; // in call by value method original values changes, because there memory addresses are passed to the function
+    // cout << "Original value of num1 is " << num1 << endl; // in call by reference method original values changes, because there memory addresses are passed to the function
 
     cout << "The sum of " << num1 << " and " << num2 << " is " << sum(num1, num2);  // arguments are passed via call by reference method(using reference variables)
     cout << "\nAfter calling and altering the value of num1 via call by reference method\n";
-    cout << "Original value of num1 is " << num1 << endl; // in call by value method original values changes, because there memory addresses are passed to the function
+    cout << "Original value of num1 is " << num1 << endl; // in call by reference method original values changes, because there memory addresses are passed to the function
 
     return 0;
 
